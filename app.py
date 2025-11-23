@@ -36,9 +36,8 @@ while True:
     elif choice == "6":
         sql = input("Your SQL command: ")
         my_list = run_free_query(cunn, sql)
-        if my_list != None:
+        if my_list is not None:
             print_in_row(my_list)
-
     elif choice == "7":
         break
     else:
